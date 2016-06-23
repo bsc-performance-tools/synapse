@@ -305,7 +305,7 @@ AC_DEFUN([AX_PROG_MRNET],
 		fi
 		dnl End hack
 
-		MRNET_CXXFLAGS="${MRNET_CXXFLAGS} -I${MRNET_INCLUDES}/mrnet"
+		MRNET_CXXFLAGS="${MRNET_CXXFLAGS} -I${MRNET_INCLUDES}/mrnet ${BOOST_CPPFLAGS}"
 		MRNET_CPPFLAGS="${MRNET_CXXFLAGS}"
 
 		AC_MSG_CHECKING([for lightweight libraries for the back-ends])
