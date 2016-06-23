@@ -4,4 +4,4 @@ Read file INSTALL for general installation instructions.
 Package dependencies
 --------------------
 * MRNet 3.1.0 or higher - http://www.paradyn.org/mrnet/#downloads
-
+* Boost 1.36 or higher 
