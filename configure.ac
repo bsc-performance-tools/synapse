@@ -6,7 +6,7 @@
 #########################
 
 # Initialize autoconf & define package name, version and bug-report address 
-AC_INIT(Synapse library, 2.0.0, tools@bsc.es)
+AC_INIT(Synapse, 2.0.0, tools@bsc.es)
 
 # GNU Autotools intermediate files are stored in the following directory
 AC_CONFIG_AUX_DIR(config)
@@ -42,12 +42,12 @@ AM_PROG_CC_C_O
 #    Checks for libraries    #
 ##############################
 BOOST_REQUIRE([1.36],
-              [AC_MSG_ERROR([This package requires the Boost Shared Pointer, but
-                             it was not found in your system])])
+              [AC_MSG_WARN([This package requires the Boost Shared Pointer, but
+                            it was not found in your system])])
 
 AX_PROG_MRNET
 if test "x${MRNET_INSTALLED}" = "xno"; then
-  AC_ERROR([MRNET libraries not found in your system. Try using '--with-mrnet'])
+  AC_MSG_WARN([MRNET libraries not found in your system. Try using '--with-mrnet'])
 fi
 
 
