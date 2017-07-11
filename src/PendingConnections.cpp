@@ -163,7 +163,7 @@ int PendingConnections::ParseForMPIDistribution(int world_size, char *&sendbuf, 
 
     fd.open(ConnectionsFile.c_str());
 
-    if (fd == NULL)
+    if (!fd.is_open())
     {
       cerr << "PendingConnections::ParseForMPIDistribution: ERROR: opening connections file '" << ConnectionsFile << " '" << endl;
     }
