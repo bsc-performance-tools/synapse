@@ -5,8 +5,14 @@
 #    Initializations    #
 #########################
 
+m4_define([synapse_major], [3])
+m4_define([synapse_minor], [5])
+m4_define([synapse_micro], [3])
+
+m4_define([synapse_version], [synapse_major.synapse_minor.synapse_micro])
+
 # Initialize autoconf & define package name, version and bug-report address 
-AC_INIT(Synapse, 2.0.0, tools@bsc.es)
+AC_INIT(Synapse, [synapse_version], tools@bsc.es)
 
 # GNU Autotools intermediate files are stored in the following directory
 AC_CONFIG_AUX_DIR(config)
