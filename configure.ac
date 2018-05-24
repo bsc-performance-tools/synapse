@@ -5,9 +5,9 @@
 #    Initializations    #
 #########################
 
-m4_define([synapse_major], [3])
-m4_define([synapse_minor], [5])
-m4_define([synapse_micro], [3])
+m4_define([synapse_major], [2])
+m4_define([synapse_minor], [0])
+m4_define([synapse_micro], [0])
 
 m4_define([synapse_version], [synapse_major.synapse_minor.synapse_micro])
 
