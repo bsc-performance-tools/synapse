@@ -7,7 +7,7 @@
 
 m4_define([synapse_major], [2])
 m4_define([synapse_minor], [0])
-m4_define([synapse_micro], [0])
+m4_define([synapse_micro], [1])
 
 m4_define([synapse_version], [synapse_major.synapse_minor.synapse_micro])
 
